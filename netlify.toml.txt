@@ -1,0 +1,12 @@
+# Ficheiro de configuração para a Netlify
+
+[build]
+  # Comando que a Netlify vai executar para construir o site
+  command = "npm run build"
+  
+  # Pasta que a Netlify vai publicar
+  publish = "_site"
+
+[build.environment]
+  # Define a versão do Node.js para garantir a compatibilidade
+  NODE_VERSION = "18"
