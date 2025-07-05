@@ -1,0 +1,35 @@
+---
+layout: layout.njk
+title: Blog - NutriSmart
+pagination:
+  data: collections.posts
+  size: 6
+  alias: posts
+  reverse: true
+---
+
+<div class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h1 class="text-4xl font-bold text-center text-heading-color mb-4">Blog NutriSmart</h1>
+        <p class="text-center text-secondary-color text-xl mb-16 max-w-2xl mx-auto leading-relaxed">
+            Todas as nossas dicas, receitas e informações para a sua jornada de saúde.
+        </p>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {# Loop para mostrar os posts da página atual #}
+            {% for post in posts %}
+                {% include "post-card.njk" %}
+            {% endfor %}
+        </div>
+
+        <!-- Paginação -->
+        <nav class="flex justify-center items-center space-x-4 mt-16" aria-label="Paginação do Blog">
+            {% if pagination.href.previous %}
+                <a href="{{ pagination.href.previous }}" class="cta-button">&larr; Página Anterior</a>
+            {% endif %}
+            {% if pagination.href.next %}
+                <a href="{{ pagination.href.next }}" class="cta-button">Próxima Página &rarr;</a>
+            {% endif %}
+        </nav>
+    </div>
+</div>

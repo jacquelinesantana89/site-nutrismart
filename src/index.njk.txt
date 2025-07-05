@@ -1,0 +1,129 @@
+---
+layout: layout.njk
+title: Nutricionista Jacqueline Santana (NutriSmart) - Clínica, Esportiva e Consultoria
+---
+
+{# Cada seção do site está aqui. O layout principal (cabeçalho/rodapé) vem do 'layout.njk' #}
+
+<!-- Seção Hero -->
+<section id="inicio" class="hero-bg text-white py-24 md:py-40">
+    <div class="container mx-auto px-6 text-center bg-black bg-opacity-50 p-10 sm:p-12 rounded-xl">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-6">Jacqueline Santana - NutriSmart</h1>
+        <p class="text-xl md:text-2xl mb-10">Nutrição Clínica e Esportiva Inteligente para sua Saúde e Performance. Consultoria Especializada para Empresas.</p>
+        <a href="https://wa.me/5585992769652?text=Olá,%20Jacqueline!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." target="_blank" rel="noopener noreferrer" class="cta-button text-lg shadow-xl">
+            <i class="fab fa-whatsapp"></i>Agendar Avaliação
+        </a>
+    </div>
+</section>
+
+<!-- Seção Sobre -->
+<section id="sobre" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-heading-color mb-16">Conheça sua Nutricionista</h2>
+        <div class="flex flex-col md:flex-row items-center md:space-x-12">
+            <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                <picture>
+                    <source srcset="/imagens/JACQUELINE.webp" type="image/webp">
+                    <source srcset="/imagens/JACQUELINE.jpg" type="image/jpeg">
+                    <img src="/imagens/JACQUELINE.jpg" alt="Foto da Nutricionista Jacqueline Santana" class="rounded-full shadow-2xl w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-cover" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/400x400/e2e8f0/333333?text=Jacqueline+Santana';">
+                </picture>
+            </div>
+            <div class="md:w-2/3 text-body-color text-lg">
+                <h3 class="text-3xl font-semibold text-heading-color mb-6">Olá! Sou Jacqueline Santana (CRN11 9900)</h3>
+                <p class="mb-5 leading-relaxed">
+                    Nutricionista formada pela Estácio em 2018, apaixonada por transformar vidas através da alimentação consciente e estratégica. Minha missão é ajudar você a alcançar seus objetivos de saúde e bem-estar, seja individualmente ou otimizando processos nutricionais para sua empresa.
+                </p>
+                <p class="mb-6 leading-relaxed">
+                    Acredito em uma nutrição baseada em ciência, sem terrorismos, e que promove uma relação positiva e duradoura com a comida, seja no atendimento presencial ou online, mantendo sempre a mesma qualidade e atenção humanizada.
+                </p>
+                <div class="flex items-center space-x-6 mt-8">
+                    <a href="https://www.instagram.com/nutrismartt/" target="_blank" rel="noopener noreferrer" class="text-green-600 hover:text-green-700 transition duration-300 flex items-center text-lg">
+                        <i class="fab fa-instagram fa-2x"></i>
+                        <span class="ml-3">@nutrismartt</span>
+                    </a>
+                     <a href="https://wa.me/5585992769652?text=Olá,%20Jacqueline!%20Vim%20pelo%20seu%20site." target="_blank" rel="noopener noreferrer" class="whatsapp-button">
+                        <i class="fab fa-whatsapp"></i>Fale Comigo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Planos -->
+<section id="planos" class="py-20 bg-section-alternate">
+    <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-heading-color mb-16">Planos e Consultas Personalizadas</h2>
+        <div class="grid md:grid-cols-3 gap-8 items-stretch">
+            <div class="card-base"> 
+                <div>
+                    <h3 class="text-2xl font-semibold text-heading-color mb-4">Consulta Avulsa</h3>
+                    <p class="text-secondary-color mb-4 leading-relaxed">Ideal para quem busca uma orientação pontual e direcionada.</p>
+                    <ul class="list-disc list-inside space-y-2 text-secondary-color mb-6 text-sm">
+                        <li>Avaliação completa e plano alimentar</li>
+                        <li>Estratégias para seu objetivo</li>
+                        <li><strong>Sem retorno incluso</strong></li>
+                    </ul>
+                </div>
+                <div class="text-center mt-auto">
+                    <p class="plan-price mb-4">R$ 150,00</p>
+                    <a href="https://wa.me/5585992769652?text=Olá,%20Jacqueline!%20Gostaria%20de%20agendar%20a%20Consulta%20Avulsa%20de%20R$150." target="_blank" rel="noopener noreferrer" class="cta-button w-full">Agendar Consulta</a>
+                </div>
+            </div>
+            <div class="card-base border-2 border-green-500 relative"> 
+                <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                    <span class="bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase">Mais Popular</span>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-heading-color mb-4">Acompanhamento Mensal</h3>
+                     <p class="text-secondary-color mb-4 leading-relaxed">Perfeito para iniciar sua jornada com suporte contínuo e ajustes.</p>
+                     <ul class="list-disc list-inside space-y-2 text-secondary-color mb-6 text-sm">
+                        <li><strong>1 consulta inicial + 1 retorno</strong> (em até 30 dias)</li>
+                        <li>Plano alimentar ajustado à evolução</li>
+                        <li>Suporte direto via WhatsApp</li>
+                        <li><strong class="text-green-600">Economia de R$ 50,00!</strong></li>
+                    </ul>
+                </div>
+                <div class="text-center mt-auto">
+                    <p class="plan-price mb-4">R$ 250,00</p>
+                    <a href="https://wa.me/5585992769652?text=Olá,%20Jacqueline!%20Tenho%20interesse%20no%20Acompanhamento%20Mensal." target="_blank" rel="noopener noreferrer" class="cta-button w-full">Quero o Plano Mensal</a>
+                </div>
+            </div>
+            <div class="card-base"> 
+                <div>
+                    <h3 class="text-2xl font-semibold text-heading-color mb-4">Acompanhamento Trimestral</h3>
+                    <p class="text-secondary-color mb-4 leading-relaxed">Ideal para resultados duradouros e sustentáveis.</p>
+                    <ul class="list-disc list-inside space-y-2 text-secondary-color mb-6 text-sm">
+                        <li><strong>3 consultas</strong> (1 por mês)</li>
+                        <li>Plano alimentar dinâmico e evolutivo</li>
+                        <li>Suporte contínuo via WhatsApp</li>
+                        <li><strong class="text-green-600">Economia de R$ 90,00!</strong></li>
+                    </ul>
+                </div>
+                <div class="text-center mt-auto">
+                    <p class="plan-price mb-4">R$ 360,00</p>
+                    <a href="https://wa.me/5585992769652?text=Olá,%20Jacqueline!%20Tenho%20interesse%20no%20Acompanhamento%20Trimestral." target="_blank" rel="noopener noreferrer" class="cta-button w-full">Quero o Plano Trimestral</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Seção Blog (agora dinâmica) -->
+<section id="blog" class="py-20 bg-white">
+     <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-center text-heading-color mb-4">Blog NutriSmart</h2>
+        <p class="text-center text-secondary-color text-xl mb-16 max-w-2xl mx-auto leading-relaxed">Dicas, receitas e informações valiosas para sua jornada de saúde e bem-estar.</p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            {# Loop para mostrar os 3 posts mais recentes. `collections.latestPosts` foi definido no .eleventy.js #}
+            {% for post in collections.latestPosts %}
+                {% include "post-card.njk" %}
+            {% endfor %}
+        </div>
+
+        <div class="text-center mt-16">
+            <a href="/blog" class="cta-button text-lg">Ver todos os posts</a>
+        </div>
+    </div>
+</section>

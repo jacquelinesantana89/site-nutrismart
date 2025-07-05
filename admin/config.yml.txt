@@ -1,0 +1,22 @@
+backend:
+  name: git-gateway
+  branch: main # ou master
+
+# Local onde as imagens enviadas pelo CMS serão salvas
+media_folder: "src/imagens/blog" 
+# Como o site irá acessar as imagens
+public_folder: "/imagens/blog" 
+
+collections:
+  - name: "posts" # Usado nas URLs, como /admin/collections/posts
+    label: "Posts do Blog" # Usado na UI
+    folder: "src/_posts" # A pasta onde os arquivos de posts serão salvos
+    create: true # Permite que os usuários criem novos documentos nesta coleção
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Template para o nome do arquivo
+    fields: # Os campos para cada post, em ordem
+      - {label: "Título", name: "title", widget: "string"}
+      - {label: "Data de Publicação", name: "date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["posts"]}
+      - {label: "Imagem de Destaque", name: "image", widget: "image"}
+      - {label: "Resumo (para a listagem)", name: "summary", widget: "string"}
+      - {label: "Corpo do Post", name: "body", widget: "markdown"}
